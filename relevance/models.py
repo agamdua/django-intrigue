@@ -39,3 +39,6 @@ class JSONStore(models.Model):
         Returns the JSON string as a dict
         """
         raise NotImplementedError
+
+    def __repr__(self):
+        raise NotImplementedError
