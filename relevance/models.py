@@ -32,3 +32,10 @@ class JSONStore(models.Model):
         enough to be _paid_ to work on a Django/Postgres stack.
     """
     books = models.TextField()
+
+    @property
+    def books(self):
+        """
+        Returns the JSON string as a dict
+        """
+        raise NotImplementedError
