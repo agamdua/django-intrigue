@@ -31,7 +31,7 @@ class JSONStore(models.Model):
         Yes, Postgres does have a JSON Field, but not all of us are lucky
         enough to be _paid_ to work on a Django/Postgres stack.
     """
-    books = models.TextField()
+    books_data = models.TextField()
 
     @property
     def books(self):
